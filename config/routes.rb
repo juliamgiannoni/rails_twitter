@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   delete 'tweets/:id', to: 'tweets#destroy'
 
   get 'tweets/:id/edit', to: 'tweets#edit', as: :edit_tweet
+
+  patch 'tweets/:id', to: 'tweets#update'
 end
