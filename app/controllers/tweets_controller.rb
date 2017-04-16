@@ -8,4 +8,8 @@ class TweetsController < ApplicationController
     @tweet = Tweet.find(params[:id])
   end
 
+  def new
+    @tweet = Tweet.new
+  end
+
 end

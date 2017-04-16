@@ -4,5 +4,10 @@ Rails.application.routes.draw do
 
   get 'tweets', to: 'tweets#index'
 
+  get 'tweets/new', to: 'tweets#new'
+
   get 'tweets/:id', to: 'tweets#show', as: :tweet
+
+  post 'tweets', to: 'tweets#create'
+
 end
