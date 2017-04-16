@@ -3,7 +3,7 @@
 <ul>
     <% @tweets.each do |tweet| %>
         <li>
-            <strong><%= tweet.handle %></strong> : <%= link_to tweet.content, tweet_path(tweet) %>
+            <strong><%= tweet.handle %></strong> : <%= link_to tweet.content, tweet_path(tweet) %> &nbsp;| &nbsp; <%= link_to "Edit this tweet", edit_tweet_path(tweet) %>
         </li>
     <% end %>
 </ul>

@@ -1,4 +1,4 @@
-<h1>Add a new tweet!</h1>
+<h1>Edit a tweet</h1>
 
 <%= form_for @tweet do |f| %>
   <div>
@@ -9,7 +9,7 @@
     <%= f.label :content %>
     <%= f.text_field :content %>
   </div>
-  <%= f.submit "Add your tweet" %>
+  <%= f.submit "Update tweet" %>
 <% end %>
 
-<%= link_to "Back to all tweets", tweets_path %>
+<%= link_to "Back to the list", tweets_path %>

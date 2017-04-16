@@ -10,4 +10,7 @@ Rails.application.routes.draw do
 
   post 'tweets', to: 'tweets#create'
 
+  delete 'tweets/:id', to: 'tweets#destroy'
+
+  get 'tweets/:id/edit', to: 'tweets#edit', as: :edit_tweet
 end
