@@ -1,0 +1,9 @@
+<h1>Julia's Twitter</h1>
+
+<ul>
+    <% @tweets.each do |tweet| %>
+        <li>
+            <%= tweet.handle %> : <%= tweet.content %>
+        </li>
+    <% end %>
+</ul>
